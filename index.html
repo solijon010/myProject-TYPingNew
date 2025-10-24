@@ -18,10 +18,34 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+      <span class="span">Solijon Ikromov</span>
     <div class="container">
-      <h1 class="site-title">Typing...</h1>
-      <h4>Salom qales</h4>
-      <input class="input" type="text" autocomplete="off" />
+      <select class="select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <h1 class="title">Typing...</h1>
+      <input class="input" type="text" autofocus autocomplete="off" />
+      <div class="bottom">
+        <p class="score">Score: <span class="score-inner">0</span></p>
+        <p class="time">
+          Time: <span class="time-minute">00</span> :
+          <span class="time-secund">00</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="overlay hidden">
+      <div class="modal">
+        <h2>Time is up!</h2>
+        <p>
+          score:
+          <span class="modal-score">0</span>
+        </p>
+        <button type="button">Reset</button>
+      </div>
     </div>
 
     <script type="module" src="./app.js"></script>
