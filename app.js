@@ -21,7 +21,7 @@ secundEl.textContent = time.toString().padStart(2, "0");
 
 // Info: Tasodifiy so‘z tanlash funksiyasi
 const randomWordFn = () => {
-  const wordList = words[difficult]; // qiyinlikka mos arraydan tanlaymiz
+  const wordList = words[difficult]; 
   randomWord = wordList[Math.floor(Math.random() * wordList.length)];
   titleEl.textContent = randomWord;
   return randomWord;
@@ -78,7 +78,7 @@ inputEl.addEventListener("input", () => {
 
 // Info: Taymer funksiyasi
 const startTimer = () => {
-  clearInterval(intervalId); // eski intervalni to‘xtatamiz
+  clearInterval(intervalId); 
   intervalId = setInterval(() => {
     if (time < 1) {
       overlayEl.classList.remove("hidden");
