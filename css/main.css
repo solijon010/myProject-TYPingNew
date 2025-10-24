@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/tping.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 2rem;
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.site-title {
+  color: cadetblue;
+  margin: 1.5rem !important;
+  display: block;
+}
+
+.input {
+  border: 2px solid cadetblue;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.input:focus {
+  outline: 4px solid cadetblue;
+}
